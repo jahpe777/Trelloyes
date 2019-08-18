@@ -1,0 +1,7 @@
+_renderButtons() {
+    return STORE.buttons.map(button => {
+      return <Button innerText={button.innerText}
+                     clicked={this._updateCount.bind(this)}
+                     />
+    })
+  }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="./style.css">
+  <title>Trelloyes!</title>
+</head>
+
+<body>
+  <main class="App">
+    <header class="App-header">
+      <h1>Trelloyes!</h1>
+    </header>
+    <div class="App-list">
+      <!-- replaced with List.js -->
+      <section class="List">
+        <header class="List-header">
+          <h2>First list</h2>
+        </header>
+        <div class="List-cards">
+          <!-- this is going to get replaced with Card.js component -->
+          <div class="Card">
+            <button type="button">delete</button>
+            <h3>Thirteenth card</h3>
+            <p>lorem ipsum</p>
+          </div>
+          <!--  / replaced -->
+          <button type="button" class="List-add-button">
+            + Add Random Card
+          </button>
+        </div>
+      </section>
+      <!-- /replaced -->
+    </div>
+  </main>
+</body>
+
+</html>
+
+App.js
+import List
+
+<main class="App">
+    <header class="App-header">
+      <h1>Trelloyes!</h1>
+    </header>
+    <div class="App-list">
+      <!-- replaced with List.js -->
+     <List /> <!-- render with a loop -->
+      <!-- /replaced -->
+    </div>
+</main>
+
+
+
+List.js 
+import Card
+
+<section class="List">
+    <header class="List-header">
+      <h2>First list</h2>
+    </header>
+    <div class="List-cards">
+      <!-- this is going to get replaced with Card.js component -->
+      <Card /> <!-- render with a loop -->
+      <!--  / replaced -->
+      <button type="button" class="List-add-button">
+        + Add Random Card
+      </button>
+    </div>
+  </section>
+
+  Card.js
+  <div class="Card">
+        <button type="button">delete</button>
+        <h3>Thirteenth card</h3>
+        <p>lorem ipsum</p>
+      </div>

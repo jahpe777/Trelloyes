@@ -11,19 +11,21 @@ class App extends Component {
   }
 }
 
-function App() {
-  render () {
-    const {store} = this.props;
+    render () {
+      const {store} = this.props;
+      const allLists = 
+      ));
+    }
+    return (
+      <main class="App">
+        <header class="App-header">
+          <h1>Trelloyes!</h1>
+        </header>
+        <div class="App-list">
+        </div>
+      </main>
+    );
   }
-  return (
-    <main class="App">
-      <header class="App-header">
-        <h1>Trelloyes!</h1>
-      </header>
-      <div class="App-list">
-      </div>
-    </main>
-  );
 }
 
 export default App;
